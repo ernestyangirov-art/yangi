@@ -1,1 +1,39 @@
-g
+import 'package:flutter/material.dart';
+
+void main() => runApp(const RpgFitnessApp());
+
+class RpgFitnessApp extends StatelessWidget {
+  const RpgFitnessApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'RPG Fitness Journey',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF7C5A2B),
+          background: const Color(0xFFF3E7C9),
+        ),
+      ),
+      home: const DayDetailScreen(),
+    );
+  }
+}
+
+class DayDetailScreen extends StatelessWidget {
+  const DayDetailScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("День 1: Жим лёжа"),
+      ),
+      body: const Center(
+        child: Text("Экран с тренировкой"),
+      ),
+    );
+  }
+}
