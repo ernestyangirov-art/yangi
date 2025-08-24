@@ -1,1 +1,16 @@
-р
+name: rpg_fitness_journey
+description: RPG Fitness Journey demo
+publish_to: "none"
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/illustrations/bench_press.png
